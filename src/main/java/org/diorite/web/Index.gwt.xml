@@ -3,6 +3,7 @@
 <module>
     <servlet path='/index.jsp' class='org.apache.jasper.servlet.JspServlet' />
     <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.google.gwt.logging.Logging"/>
 
     <entry-point class='org.diorite.web.client.Index'/>
 
