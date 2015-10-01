@@ -13,14 +13,18 @@ import com.google.gwt.user.client.ui.RootPanel;
 import org.diorite.web.client.Snake.MoveResult;
 import org.diorite.web.client.Snake.SnakePart;
 
+@SuppressWarnings({"ClassHasNoToStringMethod", "Convert2Lambda"})
 public class SnakeGame extends Timer
 {
-    public static final int BONUS_BONUS_CAHNCE = 20;
-    public static final int LOSE_TICK          = 150;
+    public static final int BONUS_BONUS_CAHNCE = 30;
+    public static final int LOSE_TICK          = 50;
     public static final int GAME_TICK          = 200;
+    public static final int MIN_GAME_SPEED     = 75;
+    public static final int SPEED_INCREASE_MOD = 50;
 
     private final int   sizeX;
     private final int   sizeZ;
+    private       int   gameTick;
     private final Snake snake;
 
     private final Set<Long> bonuses;
@@ -39,6 +43,7 @@ public class SnakeGame extends Timer
 
         this.sizeX = sizeX;
         this.sizeZ = sizeZ;
+        this.gameTick = GAME_TICK * SPEED_INCREASE_MOD;
         this.index = index;
 
         this.freeFields = new HashSet<>(sizeX * sizeZ);
@@ -98,6 +103,10 @@ public class SnakeGame extends Timer
     @Override
     public void run()
     {
+        if (this.gameTick > (MIN_GAME_SPEED * SPEED_INCREASE_MOD))
+        {
+            this.gameTick--;
+        }
         final MoveResult result = this.snake.move(this.dir, this);
         if (this.bonuses.isEmpty() || (this.rand.nextInt(BONUS_BONUS_CAHNCE) == 0))
         {
@@ -105,7 +114,7 @@ public class SnakeGame extends Timer
         }
         if (result == MoveResult.NONE)
         {
-            this.schedule(GAME_TICK);
+            this.schedule(this.gameTick / SPEED_INCREASE_MOD);
         }
         else
         {
