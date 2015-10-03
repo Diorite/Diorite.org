@@ -4,13 +4,13 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
              version="6">
 
-    <module id="DioriteWeb-Web">
+    <module id="Snake">
         <web>
             <web-uri>web.war</web-uri>
-            <context-root>DioriteWebWeb</context-root>
+            <context-root>Snake</context-root>
         </web>
     </module>
-    <module id="DioriteWeb-EJB">
+    <module id="Snake-EJB">
         <ejb>ejb.jar</ejb>
     </module>
 </application>

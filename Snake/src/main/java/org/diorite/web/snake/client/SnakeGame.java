@@ -1,4 +1,4 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -10,8 +10,8 @@ import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.RootPanel;
 
-import org.diorite.web.client.Snake.MoveResult;
-import org.diorite.web.client.Snake.SnakePart;
+import org.diorite.web.snake.client.Snake.MoveResult;
+import org.diorite.web.snake.client.Snake.SnakePart;
 
 @SuppressWarnings({"ClassHasNoToStringMethod", "Convert2Lambda"})
 public class SnakeGame extends Timer
@@ -34,9 +34,9 @@ public class SnakeGame extends Timer
     private Dir dir = Dir.RIGHT;
 
     private final Random rand = new Random();
-    private final Index index;
+    private final SnakeModule snakeModule;
 
-    public SnakeGame(final int sizeX, final int sizeZ, final Index index)
+    public SnakeGame(final int sizeX, final int sizeZ, final SnakeModule snakeModule)
     {
         this.bonuses = new HashSet<>(3);
         this.walls = new HashSet<>(20);
@@ -44,7 +44,7 @@ public class SnakeGame extends Timer
         this.sizeX = sizeX;
         this.sizeZ = sizeZ;
         this.gameTick = GAME_TICK * SPEED_INCREASE_MOD;
-        this.index = index;
+        this.snakeModule = snakeModule;
 
         this.freeFields = new HashSet<>(sizeX * sizeZ);
         for (int x = 0; x < sizeX; x++)
@@ -78,19 +78,19 @@ public class SnakeGame extends Timer
             @Override
             public void onKeyDown(final KeyDownEvent event)
             {
-                if (event.isDownArrow())
+                if ((SnakeGame.this.dir != Dir.UP) && event.isDownArrow())
                 {
                     SnakeGame.this.dir = Dir.DOWN;
                 }
-                else if (event.isUpArrow())
+                else if ((SnakeGame.this.dir != Dir.DOWN) && event.isUpArrow())
                 {
                     SnakeGame.this.dir = Dir.UP;
                 }
-                else if (event.isRightArrow())
+                else if ((SnakeGame.this.dir != Dir.LEFT) && event.isRightArrow())
                 {
                     SnakeGame.this.dir = Dir.RIGHT;
                 }
-                else if (event.isLeftArrow())
+                else if ((SnakeGame.this.dir != Dir.RIGHT) && event.isLeftArrow())
                 {
                     SnakeGame.this.dir = Dir.LEFT;
                 }
@@ -129,7 +129,7 @@ public class SnakeGame extends Timer
                     this.part = this.part.getPrev();
                     if (this.part == null)
                     {
-                        SnakeGame.this.index.restart();
+                        SnakeGame.this.snakeModule.restart();
                         return;
                     }
                     this.schedule(LOSE_TICK);

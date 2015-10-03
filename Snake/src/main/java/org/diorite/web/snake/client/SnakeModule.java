@@ -1,11 +1,11 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.google.gwt.core.client.EntryPoint;
 
-public class Index implements EntryPoint
+public class SnakeModule implements EntryPoint
 {
     public static final String EMPTY_FIELD = "#607d8b";
     public static final String WALL_FIELD  = "#f0f0f0";

@@ -1,11 +1,11 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 public enum FieldType
 {
-    EMPTY(Index.EMPTY_FIELD),
-    BONUS(Index.BONUS_FIELD),
-    SNAKE(Index.SNAKE_FIELD),
-    WALL(Index.EMPTY_FIELD),
+    EMPTY(SnakeModule.EMPTY_FIELD),
+    BONUS(SnakeModule.BONUS_FIELD),
+    SNAKE(SnakeModule.SNAKE_FIELD),
+    WALL(SnakeModule.WALL_FIELD),
     INVALID(null);
     private final String color;
 

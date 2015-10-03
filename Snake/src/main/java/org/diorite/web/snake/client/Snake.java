@@ -1,4 +1,4 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,7 +8,7 @@ import com.google.gwt.dom.client.Document;
 public class Snake
 {
     private final Set<Long> snail = new HashSet<>(10);
-    private       SnakePart head  = new SnakePart(Index.GAME_SIZE_X / 2, Index.GAME_SIZE_Z / 2);
+    private       SnakePart head  = new SnakePart(SnakeModule.GAME_SIZE_X / 2, SnakeModule.GAME_SIZE_Z / 2);
     private       SnakePart tail  = this.head;
 
     public SnakePart getHead()
@@ -163,7 +163,7 @@ public class Snake
 
         public void lose()
         {
-            Document.get().getElementById(this.toString()).getStyle().setBackgroundColor(Index.LOSE_FIELD);
+            Document.get().getElementById(this.toString()).getStyle().setBackgroundColor(SnakeModule.LOSE_FIELD);
         }
 
         @Override

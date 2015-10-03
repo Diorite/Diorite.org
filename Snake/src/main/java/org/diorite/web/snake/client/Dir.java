@@ -1,4 +1,4 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 public enum Dir
 {

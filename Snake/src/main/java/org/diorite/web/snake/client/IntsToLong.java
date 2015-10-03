@@ -1,4 +1,4 @@
-package org.diorite.web.client;
+package org.diorite.web.snake.client;
 
 /**
  * Class with methods to create long from two ints, and get ints from long.
