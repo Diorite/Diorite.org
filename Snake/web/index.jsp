@@ -3,15 +3,16 @@
     public static final int GAME_SIZE_X = SnakeModule.GAME_SIZE_X;
     public static final int GAME_SIZE_Z = SnakeModule.GAME_SIZE_Z;
 %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>#OnlyDiorite</title>
     <link rel="stylesheet" href="Index.css">
-    <script type="text/javascript" language="javascript"
-            src="org.diorite.web.snake.SnakeModule/org.diorite.web.snake.SnakeModule.nocache.js"></script>
     <link rel="stylesheet" href="mdl/material.min.css">
-    <script src="mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="org.diorite.web.snake.SnakeModule/org.diorite.web.snake.SnakeModule.nocache.js"></script>
+    <script src="mdl/material.min.js"></script>
 </head>
 <body>
 
