@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <script src="org.diorite.web.snake.SnakeModule/org.diorite.web.snake.SnakeModule.nocache.js"></script>
-    <script src="mdl/material.min.js"></script>
 </head>
 <body>
 
 <div>
     <div id="topBar" class="wide mdl-color--light-blue-400">
-        <img src="Diorite.png" id="logo">
+        <img src="Diorite.png">
 
         <p>#OnlyDiorite</p>
     </div>
