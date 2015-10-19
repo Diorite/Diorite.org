@@ -10,7 +10,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>../Snake</module>
+        <!--<module>../Snake</module>-->
+        <module>../WebUtils</module>
+        <module>../DioritePage</module>
     </modules>
 
     <properties>
@@ -90,6 +92,17 @@
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>2.3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.diorite.web</groupId>
+                <artifactId>DioritePage</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.diorite.web</groupId>
+                <artifactId>WebUtils</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
