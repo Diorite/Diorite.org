@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -45,8 +44,8 @@
                 <h4 class="header col s12 light-blue-text lighten-5 imgtext-h">New minecraft server software!</h4>
             </div>
             <div class="row center">
-                <a href="https://github.com/Diorite/Diorite" id="download-button"
-                   class="btn-large waves-effect waves-light teal lighten-1">GitHub</a>
+                <a href="https://github.com/Diorite/Diorite" class="btn-large waves-effect waves-light teal lighten-1">GitHub</a>
+                <a href="http://dl.diorite.org" class="btn-large waves-effect waves-light teal lighten-1">Download Diorite</a>
             </div>
             <br><br>
 
