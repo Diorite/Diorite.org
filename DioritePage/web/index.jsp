@@ -45,7 +45,8 @@
             </div>
             <div class="row center">
                 <a href="https://github.com/Diorite/Diorite" class="btn-large waves-effect waves-light teal lighten-1">GitHub</a>
-                <a href="http://dl.diorite.org" class="btn-large waves-effect waves-light teal lighten-1">Download Diorite</a>
+                <a href="http://dl.diorite.org" class="btn-large waves-effect waves-light teal lighten-1">Download
+                    Diorite</a>
             </div>
             <br><br>
 
@@ -58,6 +59,14 @@
 <div class="container">
     <div class="section">
 
+        <div class="wrapper">
+            <div class="h_iframe">
+                <!-- a transparent image is preferable -->
+                <img class="ratio" src="ilovehtml.png"/>
+                <iframe src="https://www.youtube.com/embed/sQb_vy0SLZY?autoplay=1&vq=hd720" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
         <!--   Icon Section   -->
         <div class="row">
             <div class="col s12">
@@ -114,7 +123,8 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server: diorite.org</h4>
+                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server:
+                    diorite.org</h4>
             </div>
         </div>
     </div>
@@ -146,7 +156,8 @@
                             Support existing platforms: <br>
 
                             <p class="tabulator">We want support Forge mods (on both client and server side), and spigot
-                                plugins, that may not be build-in feature, but additional module of diorite, installed as
+                                plugins, that may not be build-in feature, but additional module of diorite, installed
+                                as
                                 plugin/core-mod.</p>
                         </li>
                     </ul>
@@ -161,7 +172,8 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server: diorite.org</h4>
+                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server:
+                    diorite.org</h4>
             </div>
         </div>
     </div>
@@ -180,11 +192,15 @@
                     for graphic, code, webpage, everything.<br>
                     You can contact with author of this project by e-mail: gotofinaldev@gmail.com</p>
                 <h4>Donate Us</h4>
-                <p class="left-align light">Hosting all that stuff also cost a bit of money, so we will be very happy if you donate something to us!</p>
+
+                <p class="left-align light">Hosting all that stuff also cost a bit of money, so we will be very happy if
+                    you donate something to us!</p>
+
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="9BE4PLYR56QT4">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
                 </form>
 
             </div>
@@ -198,7 +214,8 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server: diorite.org</h4>
+                <h4 class="header col s12 light-blue-text lighten-5 imgtext">Diorite minecraft test server:
+                    diorite.org</h4>
             </div>
         </div>
     </div>
@@ -207,7 +224,7 @@
 
 <footer class="page-footer teal">
     <%
-//        <div class="container">
+        //        <div class="container">
 //        <div class="row">
 //        <div class="col l6 s12">
 //        <h5 class="white-text">Company Bio</h5>
