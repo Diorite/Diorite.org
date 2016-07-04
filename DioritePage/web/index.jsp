@@ -75,7 +75,7 @@
                     <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
                     <h5 class="center">About Diorite:</h5>
 
-                    <p class="light">Diorite is a new minecaft server software, it isn't ready yet but our main goals
+                    <p class="light">Diorite is a new Minecaft server software, it isn't ready yet but our main goals
                         are:</p>
                     <ul>
                         <li>
@@ -192,7 +192,7 @@
                 <p class="left-align light">We are looking for people that will help us with project, we need people
                     for graphics, code, webpage, everything.<br>
                     You can contact the author of this project by e-mail: gotofinaldev@gmail.com</p>
-                <h4>Donate To Us</h4>
+                <h4>Donate To Us:</h4>
 
                 <p class="left-align light">Hosting all this stuff also cost a bit of money, so we would be very happy
                     if you donate something to us!</p>
